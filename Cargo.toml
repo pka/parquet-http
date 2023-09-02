@@ -1,0 +1,9 @@
+[package]
+name = "parquet-http"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+arrow2 = { version = "0.17.4", features = ["io_parquet", "io_parquet_compression"] }
+env_logger = "0.10.0"
+http-range-client = { version = "0.7.1", no-default-features = true, features = ["ureq-sync"] }
