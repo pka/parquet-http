@@ -4,4 +4,4 @@ Examples for reading Parquet files using https://crates.io/crates/http-range-cli
 
 ## arrow2
 
-    RUST_LOG=read_logger=debug cargo run
+    RUST_LOG=read_logger=debug cargo run --example arrow2
