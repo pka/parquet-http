@@ -5,7 +5,7 @@ edition = "2021"
 
 [dependencies]
 env_logger = "0.10.0"
-http-range-client = { version = "0.7.1", no-default-features = true, features = ["ureq-sync"] }
+http-range-client = { version = "0.7.1", default-features = false, features = ["ureq-sync"] }
 # arrow2
 arrow2 = { version = "0.17.4", features = ["io_parquet", "io_parquet_compression"] }
 # parquet

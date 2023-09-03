@@ -1,4 +1,4 @@
-use http_range_client::HttpReader;
+use http_range_client::UreqHttpReader as HttpReader;
 use parquet::file::reader::{FileReader, Length, SerializedFileReader};
 use std::fs::File;
 

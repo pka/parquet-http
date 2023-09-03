@@ -1,7 +1,7 @@
 use std::time::SystemTime;
 use arrow2::error::Error;
 use arrow2::io::parquet::read;
-use http_range_client::HttpReader;
+use http_range_client::UreqHttpReader as HttpReader;
 
 fn main() -> Result<(), Error> {
     env_logger::init();
