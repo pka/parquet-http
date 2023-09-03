@@ -10,3 +10,5 @@ http-range-client = { version = "0.7.1", default-features = false, features = ["
 arrow2 = { version = "0.17.4", features = ["io_parquet", "io_parquet_compression"] }
 # parquet
 #parquet = "46.0.0"
+# polars
+#polars = { version = "0.32.1", features = ["lazy", "parquet"] }
