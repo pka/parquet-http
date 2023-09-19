@@ -10,5 +10,14 @@ http-range-client = { version = "0.7.1", default-features = false, features = ["
 arrow2 = { version = "0.17.4", features = ["io_parquet", "io_parquet_compression"] }
 # parquet
 #parquet = "46.0.0"
+# datafusion
+datafusion = "31.0.0"
+# Feature aws is requried as a workaround for https://github.com/apache/arrow-rs/issues/4775
+object_store = { version = "0.7.0", default-features = false, features = ["http", "aws"] }
+tokio = "1.0"
+url = "2.4.1"
 # polars
 #polars = { version = "0.32.1", features = ["lazy", "parquet"] }
+
+[patch.crates-io]
+object_store = { git = "https://github.com/tustvold/arrow-rs", branch = "http-store-head-request" }
