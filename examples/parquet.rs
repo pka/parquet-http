@@ -16,7 +16,7 @@ fn main() {
         "https://github.com/kylebarron/geoarrow-rs/raw/main/fixtures/geoparquet/nybb.parquet",
     );
     // Issue HEAD request for content-length
-    let _ = input.get_content_length().unwrap();    
+    let _ = input.get_content_length().unwrap();
     let reader = SerializedFileReader::new(input).unwrap();
 
     let parquet_metadata = reader.metadata();

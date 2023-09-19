@@ -1,7 +1,7 @@
 use http_range_client::UreqHttpReader as HttpReader;
 use polars::prelude::*;
 
-/* 
+/*
 REMARK: Does require branch `polars` of http-range-client,
 which is not released.
 Polars requires MmapBytesReader::to_bytes or to_file, which doesn't make sense for SyncHttpRangeClient
